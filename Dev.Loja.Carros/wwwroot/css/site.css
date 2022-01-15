@@ -1,0 +1,39 @@
+    html {
+      font-size: 14px;
+    }
+
+    @media (min-width: 768px) {
+      html {
+        font-size: 16px;
+      }
+    }
+
+    html {
+      position: relative;
+      min-height: 100%;
+    }
+
+    body {
+      margin-bottom: 60px;
+    }
+
+    div#slider {
+        
+        display: block;
+        height: 293px;
+        width: 600px;
+        margin: auto;
+        margin-top: 20px;
+        position: relative;
+    }
+
+        div#slider li {
+            list-style: none;
+            position: absolute;
+        }
+    div#slider img {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        vertical-align: top;
+    }
