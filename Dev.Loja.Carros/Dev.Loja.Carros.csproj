@@ -8,14 +8,42 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="img\**" />
     <Compile Remove="NovaPasta\**" />
+    <Compile Remove="Views\AspNetUsers\**" />
+    <Compile Remove="Views\users\**" />
     <Compile Remove="wwwroot\NovaPasta\**" />
+    <Content Remove="img\**" />
     <Content Remove="NovaPasta\**" />
+    <Content Remove="Views\AspNetUsers\**" />
+    <Content Remove="Views\users\**" />
     <Content Remove="wwwroot\NovaPasta\**" />
+    <EmbeddedResource Remove="img\**" />
     <EmbeddedResource Remove="NovaPasta\**" />
+    <EmbeddedResource Remove="Views\AspNetUsers\**" />
+    <EmbeddedResource Remove="Views\users\**" />
     <EmbeddedResource Remove="wwwroot\NovaPasta\**" />
+    <None Remove="img\**" />
     <None Remove="NovaPasta\**" />
+    <None Remove="Views\AspNetUsers\**" />
+    <None Remove="Views\users\**" />
     <None Remove="wwwroot\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\AspNetUsers.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\bugatti.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\carros.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\kwid.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

@@ -1,39 +1,93 @@
-    html {
-      font-size: 14px;
-    }
+html {
+    font-size: 14px;
+}
 
-    @media (min-width: 768px) {
-      html {
+@media (min-width: 768px) {
+    html {
         font-size: 16px;
-      }
     }
+}
 
-    html {
-      position: relative;
-      min-height: 100%;
-    }
+html {
+    position: relative;
+    min-height: 100%;
+}
 
-    body {
-      margin-bottom: 60px;
-    }
+body {
+    margin-bottom: 60px;
+}
 
-    div#slider {
-        
-        display: block;
-        height: 293px;
-        width: 600px;
-        margin: auto;
-        margin-top: 20px;
-        position: relative;
-    }
+div#slider {
+    /*align-content: safe center;*/
+    flex: auto;
+    display: block;
+    height: 100px;
+    width: 500px;
+    margin: 50px 10px 5px 200px;
+    margin-top: 500px;
+    position: relative;
+}
 
-        div#slider li {
-            list-style: none;
-            position: absolute;
-        }
-    div#slider img {
-        margin: auto;
-        height: 100%;
-        width: 100%;
-        vertical-align: top;
-    }
+li {
+    list-style: none;
+    position: absolute;
+}
+
+img {
+    margin: auto;
+    vertical-align: top;
+}
+
+input {
+    display: none;
+}
+
+label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+li:nth-child(1) label {
+    left: 10px;
+}
+
+li:nth-child(2) label {
+    left: 40px;
+}
+
+li:nth-child(3) label {
+    left: 70px;
+}
+
+img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+section#corpo {
+    display: block;
+    width: 520px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+    padding-bottom: 50px;
+}
+
+
+aside#lateral {
+    display: block;
+    width: 350px;
+    vertical-align: bottom;
+}

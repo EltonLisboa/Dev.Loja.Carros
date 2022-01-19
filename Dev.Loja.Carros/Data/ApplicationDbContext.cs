@@ -12,5 +12,7 @@ namespace Dev.Loja.Carros.Data
         }
 
         public DbSet<Carro> Carros { get; set; }
+
+        
     }
 }

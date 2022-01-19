@@ -1,35 +1,36 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
- <div class="slider">
-        <ul type="disc">
-            <li>
-                <h3>Bugaatti</h3>
-               <!-- <img src= "bugatti.jpg"/>-->
-           
+<div class="slider">
+    <ul class="slider">
+    <li>
+          <input type="radio" id="slide1" name="slide" checked>
+          <label for="slide1"></label>
+          <img src="~/bugatti.jpg" width="400px" height="200px"/>
+        </li>
+        <li>
+              <input type="radio" id="slide2" name="slide">
+              <label for="slide2"></label>
+              <img src="~/kwid.jpg" width="400px" height="200px"/>
             </li>
-
             <li>
-                <h3>Kwid</h3>
-                <!--<img src= "../img/kwid.jpg"/>-->
-           
-            </li>
-
-            <li>
-                <h3>Carros</h3>
-                
-                <!--<img src= "../img/carros.jpg"/>-->
-           
+                  <input type="radio" id="slide3" name="slide">
+                  <label for="slide3"></label>
+                  <img src="~/carros.jpg" width="400px" height="200px"/>
             </li>
         </ul>
     </div>
 
 
-<div class="text-center">
-    
-    <h1 class="display-4">Welcome </h1>
+
+<!--
+<li>
+<aside id="lateral">
+  <div class= "text-center">
+    <h1 class="display-4">Bem-Vindo </h1>
     <a href="../Carros">Carros</a>
+
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <img src= "../bugatti.jpg"/>
-</div>
+  </div>
+</aside>
+</li>-->

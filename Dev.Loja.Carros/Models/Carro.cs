@@ -20,7 +20,7 @@ namespace Dev.Loja.Carros.Models
 
         public Carro()
         {
-                Id= Guid.NewGuid(); ;
+            Id = Guid.NewGuid();
         }
 
     }
